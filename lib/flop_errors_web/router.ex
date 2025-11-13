@@ -20,6 +20,12 @@ defmodule FlopErrorsWeb.Router do
     get "/", PageController, :home
   end
 
+  scope "/flop", FlopErrorsWeb do
+    pipe_through :browser
+
+    live("/", FlopLive, :index)
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", FlopErrorsWeb do
   #   pipe_through :api

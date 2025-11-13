@@ -65,7 +65,9 @@ defmodule FlopErrors.MixProject do
       {:gettext, "~> 0.26"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      {:flop, "~> 0.26.3"},
+      {:flop_phoenix, "~> 0.25.3"}
     ]
   end
 
